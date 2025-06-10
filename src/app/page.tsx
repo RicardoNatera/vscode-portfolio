@@ -34,6 +34,13 @@ export default function Home() {
             openTabs={openTabs}
             activeFile={activeFile}
             onSelect={setActiveFile}
+            onClose={(filename) => {
+              setOpenTabs((prev) => prev.filter((f) => f !== filename));
+              if (activeFile === filename) {
+                const remainingTabs = openTabs.filter((f) => f !== filename);
+                setActiveFile(remainingTabs[0] || null);
+              }
+            }}
           />
 
           {/* Editor (crece) */}
@@ -42,6 +49,7 @@ export default function Home() {
               content={
                 activeFile ? files[activeFile] : "// Selecciona un archivo"
               }
+              filename={activeFile || undefined}
             />
           </div>
 
