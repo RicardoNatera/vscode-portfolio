@@ -1,4 +1,5 @@
 import type { FileName } from "@/types/Files";
+import { getIconForFile } from "@/lib/icon-map";
 
 interface Props {
   openTabs: FileName[];
@@ -12,12 +13,13 @@ export default function TabBar({ openTabs, activeFile, onSelect }: Props) {
       {openTabs.map((file) => (
         <div
           key={file}
-          onClick={() => onSelect(file)}
-          className={`px-3 py-1 border-r border-[#3c3c3c] cursor-pointer ${
-            file === activeFile ? "bg-[#2c2c2c] text-white" : "text-gray-400"
+          className={`flex items-center gap-1 px-3 py-1 text-sm border-r border-zinc-700 cursor-pointer ${
+            file === activeFile && "bg-zinc-800"
           }`}
+          onClick={() => onSelect(file)}
         >
-          {file}
+          {getIconForFile(file)}
+          <span>{file}</span>
         </div>
       ))}
     </div>

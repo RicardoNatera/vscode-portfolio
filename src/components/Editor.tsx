@@ -1,13 +1,14 @@
-interface Props {
-  content: string;
-}
+"use client";
 
-export default function Editor({ content }: Props) {
+import { highlight } from "@/lib/highlight";
+
+export function Editor({ content }: { content: string }) {
   return (
-    <div className="flex-1 bg-[#1e1e1e] p-4 overflow-auto text-sm font-mono text-gray-200">
-      <pre>
-        <code>{content}</code>
-      </pre>
-    </div>
+    <pre className="overflow-auto p-4 text-sm bg-[#1e1e1e] text-white rounded-md h-full">
+      <code
+        className="language-jsx"
+        dangerouslySetInnerHTML={{ __html: highlight(content) }}
+      />
+    </pre>
   );
 }
