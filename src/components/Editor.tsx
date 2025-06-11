@@ -2,6 +2,7 @@
 
 import { highlight } from "@/lib/highlight";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { motion } from "framer-motion";
 
 interface EditorProps {
@@ -23,8 +24,8 @@ export function Editor({ content, filename }: EditorProps) {
  return (
   <div className="flex-1 h-full bg-[#1e1e1e] text-white overflow-hidden">
     {isMarkdown ? (
-      <div className="h-full overflow-auto p-4 prose prose-invert max-w-none">
-        <ReactMarkdown>{content}</ReactMarkdown>
+      <div className="h-full overflow-auto p-4 prose prose-invert max-w-none [&_a]:text-green-500 hover:[&_a]:underline">
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
       </div>
     ) : (
       <motion.div

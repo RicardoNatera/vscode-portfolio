@@ -11,6 +11,9 @@ Soy metódico, creativo, organizado, honesto y disfruto poder resolver problemas
 
 ## 💻 ¿A qué me dedico?
 
+
+Prueba: Visita [mi web](https://ejemplo.com) o escríbeme a miemail@ejemplo.com
+
 Trabajo con tecnologías **web**, **datos** y **desarrollo de software**.
 
 Tengo **5 años de experiencia en desarrollo web**. He trabajado como **autónomo** en proyectos de baja, mediana y alta escala para empresas en diferentes sectores, donde mis tareas han sido:
