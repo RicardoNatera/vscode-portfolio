@@ -10,8 +10,13 @@ const tabs = [
   { id: "git", icon: <FaCodeBranch /> },
   { id: "extensions", icon: <FaPuzzlePiece /> },
 ];
+interface SidebarProps {
+  onToggleExplorer?: () => void;
+  onOpenContact?: () => void;
+  onToggleExtensions?: () => void;
+}
 
-export default function Sidebar() {
+export default function Sidebar({ onToggleExplorer, onOpenContact, onToggleExtensions }: SidebarProps) {
   const [activeTab, setActiveTab] = useState("explorer");
 
   return (
@@ -23,7 +28,20 @@ export default function Sidebar() {
             "text-xl p-2 mb-2 hover:text-white",
             activeTab === tab.id && "bg-zinc-700 text-white rounded"
           )}
-          onClick={() => setActiveTab(tab.id)}
+          onClick={() => {
+            if (tab.id === "extensions" && onToggleExtensions) {
+              onToggleExtensions();
+            } else if (tab.id === "git") {
+              window.open("https://github.com/RicardoNatera", "_blank");
+            } else if (tab.id === "search" && onOpenContact) {
+              onOpenContact();
+            } else {
+              if (tab.id === "explorer" && onToggleExplorer) {
+                onToggleExplorer();
+              }
+            }
+            setActiveTab(tab.id);
+          }}
         >
           {tab.icon}
         </button>
