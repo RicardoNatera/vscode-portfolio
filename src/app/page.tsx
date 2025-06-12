@@ -1,4 +1,5 @@
 "use client"
+import { useEffect } from "react";
 import Sidebar from "@/components/Sidebar";
 import TabBar from "@/components/TabBar";
 import { Editor } from "@/components/Editor";
@@ -20,6 +21,23 @@ export default function Home() {
   const { language } = useLanguage();
   const files = filesByLanguage[language];
   
+  useEffect(() => {
+    if (activeFile) {
+      localStorage.setItem("activeFile", activeFile);
+    }
+  }, [activeFile]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("activeFile") as FileName | null;
+    if (saved && files[saved]) {
+      setOpenTabs([saved]);
+      setActiveFile(saved);
+    } else {
+      localStorage.removeItem("activeFile");
+    }
+  }, [language]);
+
+
   return (
     <div className="h-screen w-screen flex flex-col bg-[#1e1e1e] text-gray-200">
       <LanguageSelector />
