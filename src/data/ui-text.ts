@@ -1,3 +1,5 @@
+import { extensions } from "./extensions";
+
 export const uiText = {
   es: {
     terminal: {
@@ -13,7 +15,19 @@ export const uiText = {
       tools:"Herramientas",
     },
     portfolio:{
-        title:"PORTAFOLIO"
+      title:"PORTAFOLIO",
+    },
+    welcome:{
+      title:"¡Bienvenido a mi Portafolio!",
+      action:"Explora los archivos para conocerme como desarrollador.",
+      about:"Información personal y profesional",
+      projects:"Proyectos destacados",
+      contact:"Datos de contacto",
+      extensions:"Extensiones",
+      extensionsMessage:"Tecnologías y herramientas que utilizo",
+      noFiles:"Archivo del portafolio",
+      repositorio:"Repo",
+      downloadCV:"Descargar currículum",
     },
   },
   en: {
@@ -30,6 +44,18 @@ export const uiText = {
     },
     portfolio:{
         title:"PORTFOLIO"
+    },
+    welcome:{
+      title:"¡Welcome to my Portfolio!",
+      action:"Explore the files to learn more about me as a developer.",
+      about:"Personal and professional information",
+      projects:"Key projects",
+      contact:"Contact information",
+      extensions:"Extensions",
+      extensionsMessage:"Technologies and tools I use",
+      noFiles:"Portfolio file",
+      repositorio:"Repo",
+      downloadCV:"Download resume",
     },
   },
 };

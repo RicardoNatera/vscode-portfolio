@@ -9,8 +9,6 @@ I'm methodical, creative, organized, honest, and enjoy solving problems, gaining
 
 ## 💻 What do I do?
 
-Test: Visit [my website](https://ejemplo.com) or email me at miemail@ejemplo.com
-
 I work with **web**, **data**, and **software development** technologies.
 
 I have **5 years of experience in web development**. I've worked as a **freelancer** on small, medium, and large-scale projects for companies in various sectors. My responsibilities have included:
