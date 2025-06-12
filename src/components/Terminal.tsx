@@ -2,9 +2,13 @@
 
 import { useState } from "react";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
+import { useLanguage } from "@/context/LanguageContext";
+import { uiText } from "@/data/ui-text";
 
 export default function Terminal() {
   const [isOpen, setIsOpen] = useState(true);
+  const { language } = useLanguage();
+  const text = uiText[language];
 
   return (
     <div className="bg-[#1e1e1e] border-t border-zinc-700 text-sm text-green-400">
@@ -16,13 +20,13 @@ export default function Terminal() {
       </div>
       {isOpen && (
         <div className="p-2 font-mono whitespace-pre h-40 overflow-y-auto">
-          $ npm run dev  
+          {text.terminal.command}  
           <br />
-          ✔️ Compilando...
+          {text.terminal.secondLine}
           <br />
-          🚀 Servidor iniciado en http://localhost:3000
+          {text.terminal.thirdLine}
           <br />
-          ⏱️ Esperando cambios...
+          {text.terminal.fourthLine}
         </div>
       )}
     </div>

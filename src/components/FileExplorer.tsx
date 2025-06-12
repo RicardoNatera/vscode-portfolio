@@ -1,4 +1,6 @@
 import type { FileName } from "@/types/Files";
+import { useLanguage } from "@/context/LanguageContext";
+import { uiText } from "@/data/ui-text";
 
 interface Props {
   files: FileName[];
@@ -6,9 +8,11 @@ interface Props {
 }
 
 export default function FileExplorer({ files, onOpenFile }: Props) {
+  const { language } = useLanguage();
+  const text = uiText[language];
   return (
     <div className="w-64 bg-[#252526] h-full p-3 text-sm text-gray-300 border-r border-[#3c3c3c]">
-      <p className="text-xs font-bold mb-2">PORTFOLIO</p>
+      <p className="text-xs font-bold mb-2">{text.portfolio.title}</p>
       <ul className="space-y-1">
         {files.map((file) => (
           <li

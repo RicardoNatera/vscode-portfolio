@@ -6,8 +6,10 @@ import StatusBar from "@/components/StatusBar";
 import FileExplorer from "@/components/FileExplorer";
 import ExtensionsPanel from "@/components/ExtensionsPanel";
 import { useState } from "react";
-import { files, FileName } from "@/types/Files";
+import { filesByLanguage, FileName } from "@/types/Files";
+import { useLanguage } from "@/context/LanguageContext";
 import Terminal from "@/components/Terminal";
+import LanguageSelector from "@/components/LanguageSelector";
 
 export default function Home() {
   const [openTabs, setOpenTabs] = useState<FileName[]>([]);
@@ -15,8 +17,12 @@ export default function Home() {
   const [showExplorer, setShowExplorer] = useState(true);
   const [showExtensions, setShowExtensions] = useState(false);
 
+  const { language } = useLanguage();
+  const files = filesByLanguage[language];
+  
   return (
     <div className="h-screen w-screen flex flex-col bg-[#1e1e1e] text-gray-200">
+      <LanguageSelector />
       {/* Zona principal: lateral + área de trabajo */}
       <div className="flex flex-1 overflow-hidden">
         {/* Barra lateral izquierda */}
