@@ -24,7 +24,7 @@ export function Editor({ content, filename }: EditorProps) {
  return (
   <div className="flex-1 h-full bg-[#1e1e1e] text-white overflow-hidden">
     {isMarkdown ? (
-      <div className="h-full overflow-auto p-4 prose prose-invert max-w-none [&_a]:text-green-500 hover:[&_a]:underline">
+      <div className="h-full overflow-auto p-6 prose prose-invert max-w-none prose-headings:mt-4 prose-p:leading-relaxed">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
       </div>
     ) : (

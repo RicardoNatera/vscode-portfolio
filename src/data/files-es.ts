@@ -1,61 +1,62 @@
+
 export const filesEs = {
-  "about.md": `# Hola, soy Ricardo Natera
+  "about.md": `# Ricardo Natera
 
-**Ingeniero Informático de la Universidad Católica Andrés Bello** pero en constante crecimiento profesional y personal.
+**Ingeniero Informático** graduado en la Universidad Católica Andrés Bello, con más de **5 años de experiencia** en desarrollo web fullstack.
 
-Soy metódico, creativo, organizado, honesto y disfruto poder resolver problemas, adquiriendo una visión del conjunto y centrándome en todos los diferentes factores involucrados.
-
----
-
-## 💻 ¿A qué me dedico?
-
-Trabajo con tecnologías **web**, **datos** y **desarrollo de software**.
-
-Tengo **5 años de experiencia en desarrollo web**. He trabajado como **autónomo** en proyectos de baja, mediana y alta escala para empresas en diferentes sectores, donde mis tareas han sido:
-
-- Analizar y crear soluciones informáticas.  
-- Diseñar y mantener sitios web.  
-- Programar y supervisar sistemas informáticos en todas las áreas.
+Especializado en **React, Next.js, NestJS, PostgreSQL y TailwindCSS**, construyo soluciones robustas, rápidas y modernas.
 
 ---
 
-## 🧠 ¿Cómo trabajo?
+## 🧠 Sobre mí
 
-Estoy habituado a la **autogestión** y el **teletrabajo**.  
-Tengo la capacidad de trabajar en equipo, buena comunicación y el mejor ánimo e iniciativa para aportar en cualquier proyecto.
+- Apasionado por resolver problemas y crear productos útiles.  
+- Metódico, creativo, proactivo y orientado al detalle.  
+- Acostumbrado al trabajo remoto, con excelente comunicación y autonomía.
+
+---
+
+## 💼 Experiencia y habilidades
+
+He trabajado como **autónomo** en proyectos de diferentes escalas y sectores, desarrollando:
+
+- Dashboards administrativos  
+- Sitios web corporativos  
+- Landing pages  
+- Sistemas de verificación de pagos  
+- APIs y bases de datos escalables
+
+**Stack principal:** 
+` 
++`React`+","+ `Next.js`+","+  `NestJS`+","+  `Prisma`+","+  `PostgreSQL`+","+  `TailwindCSS`+","+  `JavaScript/TypeScript`+` 
+`+`
 
 ---
 
 ## 🚀 ¿Qué busco?
 
-Actualmente, estoy **abierto a oportunidades** que me permitan trabajar con nuevos compañeros y conseguir nuevas metas juntos.
-
-Me gusta lo que hago y **confío plenamente en mis resultados**.
+Estoy abierto a **nuevas oportunidades** laborales, colaboraciones o proyectos donde pueda aportar mis conocimientos y seguir creciendo como desarrollador.
 
 ---
 
-Gracias por tomar el tiempo de leer mi extracto.  
-¡Que pase un buen día!
+📍 Basado en Nueva Esparta, Venezuela  
+💬 Español nativo, inglés intermedio-alto  
+📫 ¿Te interesa colaborar? ¡Visita la pestaña de contacto!
+
 `,
 
   "projects.tsx": `export const projects = [
   {
     title: "Dashboard de Productos",
-    description: "Panel administrativo con autenticación, roles, CRUD, filtros y exportación en PDF/Excel.aaaaaaaaaaaaaaaaaaaaa",
+    description: "Panel administrativo para gestionar productos con autenticación, roles de usuario, operaciones CRUD, filtros y exportación a PDF/Excel.",
     technologies: ["Next.js", "TailwindCSS", "NestJS", "Prisma", "PostgreSQL"],
-    repo: "https://github.com/ricardonatera/product-dashboard"
+    repo: "https://github.com/RicardoNatera/inventario-app"
   },
   {
-    title: "Portafolio tipo VSCode",
-    description: "Portafolio interactivo con temática de Visual Studio Code.",
-    technologies: ["Next.js", "TailwindCSS", "TypeScript"],
-    repo: "https://github.com/ricardonatera/vscode-portfolio"
-  },
-  {
-    title: "Landing Page para empresa de agua",
-    description: "Página promocional con métodos de pago y panel para verificación de pagos.",
-    technologies: ["Next.js", "NestJS", "TailwindCSS", "Pago Móvil"],
-    repo: "https://github.com/ricardonatera/water-landing"
+    title: "Portafolio estilo VSCode",
+    description: "Portafolio interactivo y responsivo con apariencia inspirada en Visual Studio Code. Incluye soporte multilenguaje, navegación por pestañas y contenido basado en archivos.",
+    technologies: ["Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],
+    repo: "https://github.com/ricardoNatera/vscode-portfolio"
   }
 ];
 `,
@@ -63,7 +64,7 @@ Gracias por tomar el tiempo de leer mi extracto.
   "contact.json": `{
   "name": "Ricardo Natera",
   "email": "ricardoantonionaterasubero@gmail.com",
-  "location": "Caracas, Venezuela",
+  "location": "Nueva Esparta, Venezuela",
   "linkedin": "https://www.linkedin.com/in/natera-dev/",
   "github": "https://github.com/RicardoNatera",
   "message": "Actualmente estoy abierto a oportunidades laborales, colaboraciones o simplemente una buena conversación profesional. ¡No dudes en contactarme!"

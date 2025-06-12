@@ -1,61 +1,58 @@
 export const filesEn = {
-  "about.md": `# Hi, I'm Ricardo Natera
+  "about.md": `# Hello, I'm Ricardo Natera
 
-**Computer Engineer from Universidad Católica Andrés Bello**, constantly growing professionally and personally.
+**Computer Engineer from Universidad Católica Andrés Bello**, with continuous growth both professionally and personally.
 
-I'm methodical, creative, organized, honest, and enjoy solving problems, gaining a big-picture view while focusing on all the different factors involved.
+I'm methodical, creative, organized, and honest. I enjoy solving problems by understanding the big picture and focusing on all the factors involved.
 
 ---
 
 ## 💻 What do I do?
 
-I work with **web**, **data**, and **software development** technologies.
+I work with **web technologies**, **data**, and **software development**.
 
-I have **5 years of experience in web development**. I've worked as a **freelancer** on small, medium, and large-scale projects for companies in various sectors. My responsibilities have included:
+I have **5 years of experience in web development**, having worked as a **freelancer** on small, medium, and large-scale projects across different industries.
+
+My responsibilities typically include:
 
 - Analyzing and creating IT solutions  
 - Designing and maintaining websites  
-- Programming and supervising IT systems in all areas
+- Programming and managing systems across various areas
 
 ---
 
 ## 🧠 How do I work?
 
-I'm used to **self-management** and **remote work**.  
-I have teamwork skills, good communication, and the best attitude and initiative to contribute to any project.
+I'm used to **remote work** and **self-management**.  
+I’m capable of working in teams, I have great communication skills, and I’m always eager to contribute with a proactive mindset.
 
 ---
 
 ## 🚀 What am I looking for?
 
-I'm currently **open to new opportunities** to work with new teammates and achieve goals together.
+I’m currently **open to opportunities** that allow me to collaborate with new teams and reach new goals together.
 
-I love what I do and **fully trust in my results**.
+I enjoy what I do and I’m fully confident in the results I deliver.
 
 ---
 
-Thank you for taking the time to read my bio.  
-Have a great day!
+Thanks for taking the time to read my summary.  
+**Have a great day!**
+
 `,
 
   "projects.tsx": `export const projects = [
   {
     title: "Product Dashboard",
-    description: "Admin panel with authentication, roles, CRUD, filters, and PDF/Excel export.aaaaaaaaaaaaaaaaaaaaa",
+    description: "Admin panel for managing products with authentication, user roles, CRUD operations, filters, and PDF/Excel export.",
     technologies: ["Next.js", "TailwindCSS", "NestJS", "Prisma", "PostgreSQL"],
-    repo: "https://github.com/ricardonatera/product-dashboard"
+    repo: "https://github.com/RicardoNatera/inventario-app"
   },
   {
     title: "VSCode-style Portfolio",
-    description: "Interactive portfolio themed after Visual Studio Code.",
-    technologies: ["Next.js", "TailwindCSS", "TypeScript"],
-    repo: "https://github.com/ricardonatera/vscode-portfolio"
-  },
-  {
-    title: "Landing Page for Water Company",
-    description: "Promotional page with payment methods and admin panel for payment verification.",
-    technologies: ["Next.js", "NestJS", "TailwindCSS", "Pago Móvil"],
-    repo: "https://github.com/ricardonatera/water-landing"
+    description: "Interactive and responsive developer portfolio designed with the look and feel of Visual Studio Code. Includes multilingual support, tab navigation, and file-based content.",
+    technologies: ["Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],
+    repo: "https://github.com/ricardoNatera/vscode-portfolio"
   }
 ];
 `,
