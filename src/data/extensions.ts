@@ -8,18 +8,19 @@ export type Extension = {
 
 export const extensions: Extension[] = [
   // Frontend
+  { name: "Typescript", icon: "SiTypescript", category: "frontend" },
   { name: "React", icon: "FaReact", category: "frontend" },
   { name: "Next.js", icon: "SiNextdotjs", category: "frontend" },
   { name: "Tailwind CSS", icon: "SiTailwindcss", category: "frontend" },
-
+  
   // Backend
-  { name: "NestJS", icon: "SiNestjs", category: "backend" },
   { name: "Node.js", icon: "FaNodeJs", category: "backend" },
-
+  { name: "NestJS", icon: "SiNestjs", category: "backend" },
+  
   // Base de Datos
   { name: "MySQL", icon: "SiMysql", category: "database" },
-  { name: "Prisma", icon: "SiPrisma", category: "database" },
 
   // Herramientas
   { name: "Git", icon: "FaGitAlt", category: "tools" },
+  { name: "Postman", icon: "SiPostman", category: "tools" },
 ];

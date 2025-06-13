@@ -4,7 +4,7 @@ export const filesEs = {
 
 **Ingeniero Informático** graduado en la Universidad Católica Andrés Bello, con más de **5 años de experiencia** en desarrollo web fullstack.
 
-Especializado en **React, Next.js, NestJS, PostgreSQL y TailwindCSS**, construyo soluciones robustas, rápidas y modernas.
+Especializado en **JavaScript/TypeScript, React, Next.js, NestJS, MySQL y TailwindCSS**, construyo soluciones robustas, rápidas y modernas.
 
 ---
 
@@ -23,25 +23,13 @@ He trabajado como **autónomo** en proyectos de diferentes escalas y sectores, d
 - Dashboards administrativos  
 - Sitios web corporativos  
 - Landing pages  
-- Sistemas de verificación de pagos  
 - APIs y bases de datos escalables
-
-**Stack principal:** 
-` 
-+`React`+","+ `Next.js`+","+  `NestJS`+","+  `Prisma`+","+  `PostgreSQL`+","+  `TailwindCSS`+","+  `JavaScript/TypeScript`+` 
-`+`
 
 ---
 
 ## 🚀 ¿Qué busco?
 
 Estoy abierto a **nuevas oportunidades** laborales, colaboraciones o proyectos donde pueda aportar mis conocimientos y seguir creciendo como desarrollador.
-
----
-
-📍 Basado en Nueva Esparta, Venezuela  
-💬 Español nativo, inglés intermedio-alto  
-📫 ¿Te interesa colaborar? ¡Visita la pestaña de contacto!
 
 `,
 

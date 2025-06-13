@@ -7,8 +7,9 @@ import {
   SiTailwindcss,
   SiNextdotjs,
   SiNestjs,
-  SiPrisma,
   SiMysql,
+  SiTypescript,
+  SiPostman,
 } from "react-icons/si";
 
 export const iconMap = {
@@ -18,8 +19,9 @@ export const iconMap = {
   SiNestjs: <SiNestjs className="text-red-500" />,
   FaNodeJs: <FaNodeJs className="text-green-500" />,
   SiMysql: <SiMysql className="text-blue-400" />,
-  SiPrisma: <SiPrisma className="text-purple-500" />,
+  SiTypescript: <SiTypescript className="text-blue-400" />,
   FaGitAlt: <FaGitAlt className="text-orange-500" />,
+  SiPostman: <SiPostman className="text-orange-600" />,
 } as const;
 
 export type IconKey = keyof typeof iconMap;
