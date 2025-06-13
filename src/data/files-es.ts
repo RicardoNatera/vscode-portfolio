@@ -1,6 +1,6 @@
 
 export const filesEs = {
-  "about.md": `# Ricardo Natera
+  "about.md": `# Hola, mi nombre es Ricardo Natera
 
 **Ingeniero Informático** graduado en la Universidad Católica Andrés Bello, con más de **5 años de experiencia** en desarrollo web fullstack.
 
@@ -31,6 +31,11 @@ He trabajado como **autónomo** en proyectos de diferentes escalas y sectores, d
 
 Estoy abierto a **nuevas oportunidades** laborales, colaboraciones o proyectos donde pueda aportar mis conocimientos y seguir creciendo como desarrollador.
 
+---
+
+Gracias por tomarse el tiempo de leer mi resumen.  
+
+**¡Que tenga un buen día!**
 `,
 
   "projects.tsx": `export const projects = [
