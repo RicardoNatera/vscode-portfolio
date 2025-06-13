@@ -12,6 +12,7 @@ import { filesByLanguage, FileName } from "@/types/Files";
 import { useLanguage } from "@/context/LanguageContext";
 import Terminal from "@/components/Terminal";
 import LanguageSelector from "@/components/LanguageSelector";
+import clsx from "clsx";
 
 export default function Home() {
   const [openTabs, setOpenTabs] = useState<FileName[]>([]);
@@ -50,9 +51,6 @@ export default function Home() {
     setInitialized(true); // 🔑 Marca como inicializado
   }, [language]);
 
-
-
-
   useEffect(() => {
     if (!initialized) return;
 
@@ -65,19 +63,31 @@ export default function Home() {
     }
   }, [openTabs, initialized]);
 
-
-
+  const [showSidebar, setShowSidebar] = useState(false);
 
   return (
     <div className="h-screen w-screen flex flex-col bg-[#1e1e1e] text-gray-200">
       <LanguageSelector />
+      <button
+        onClick={() => setShowSidebar((prev) => !prev)}
+        className="sm:hidden fixed top-10 right-4 z-50 text-white p-2 rounded"
+      >
+        ☰
+      </button>
       {/* Zona principal: lateral + área de trabajo */}
       <div className="flex flex-1 overflow-hidden">
         {/* Barra lateral izquierda */}
+        {/* Sidebar móvil (absolute) o desktop (normal) */}
+        <div className={clsx(
+          "z-40 transition-transform duration-200",
+          showSidebar ? "translate-x-0" : "-translate-x-full",
+          "fixed sm:relative top-0 left-0 sm:translate-x-0 sm:flex sm:w-12",
+        )}>
         <Sidebar 
           onToggleExplorer={() => {
             setShowExplorer(prev => !prev)
             setShowExtensions(false)
+            setShowSidebar(false); // cierra sidebar en móviles al seleccionar
           }} 
           onOpenContact={() => {
               const filename: FileName = "contact.json";
@@ -85,25 +95,31 @@ export default function Home() {
                 setOpenTabs((prev) => [...prev, filename]);
               }
               setActiveFile(filename);
-            }}
+              setShowSidebar(false);
+          }}
           onToggleExtensions={() => {
             setShowExplorer(false)
-            setShowExtensions(prev => !prev)}
+            setShowExtensions(prev => !prev)
+            setShowSidebar(false);
+          } 
           }
           />
-        {showExplorer && (
-          <FileExplorer
-            files={Object.keys(files) as FileName[]}
-            onOpenFile={(filename) => {
-              if (!openTabs.includes(filename)) {
-                setOpenTabs((prev) => [...prev, filename]);
-              }
-              setActiveFile(filename);
-            }}
-          />
-        )}
+          </div>
+          {showExplorer && (
+          <div className="w-36 sm:w-64 shrink-0">
+            <FileExplorer
+              files={Object.keys(files) as FileName[]}
+              onOpenFile={(filename) => {
+                if (!openTabs.includes(filename)) {
+                  setOpenTabs((prev) => [...prev, filename]);
+                }
+                setActiveFile(filename);
+              }}
+            />
+          </div>
+          )}
         {showExtensions && (
-          <div className="w-64 bg-zinc-900 border-r border-zinc-700">
+          <div className="shrink-0 w-36 sm:w-64 bg-zinc-900 border-r border-zinc-700">
             <ExtensionsPanel />
           </div>
         )}

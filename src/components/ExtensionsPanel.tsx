@@ -19,12 +19,12 @@ export default function ExtensionsPanel() {
   return (
     <motion.div
       className="p-4 h-full overflow-auto text-sm"
-      initial={{ x: 0, opacity: 0 }}
+      initial={{ x: -10, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
+      transition={{ duration: 0.3 }}
     >
       <p className="text-xl font-bold mb-4">{text.extensions.title}</p>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {extensions.map((ext) => (
           <div
             key={ext.name}

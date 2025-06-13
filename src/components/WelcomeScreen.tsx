@@ -1,40 +1,43 @@
 "use client";
 
-import { filesByLanguage } from "@/types/Files";
+import { filesByLanguage, FileName } from "@/types/Files";
 import { useLanguage } from "@/context/LanguageContext";
 import { uiText } from "@/data/ui-text";
-import { FileName } from "@/types/Files";
+
+interface WelcomeScreenProps {
+  onOpenFile: (filename: FileName) => void;
+  onToggleExtensions: () => void;
+}
 
 export default function WelcomeScreen({
   onOpenFile,
   onToggleExtensions,
-}: {
-  onOpenFile: (filename: FileName) => void;
-  onToggleExtensions: () => void;
-}) {
+}: WelcomeScreenProps) {
   const { language } = useLanguage();
   const text = uiText[language];
   const files = filesByLanguage[language];
-  const cvFile = language === "es" ? "/cv/cv-es.pdf" : "/cv/cv-en.pdf"
+  const cvFile = language === "es" ? "/cv/cv-es.pdf" : "/cv/cv-en.pdf";
+
 
   return (
-    <div className="flex flex-col items-center justify-center h-full relative px-4 text-center">
-      {/* RN Icon Faint Background */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-50">
-        <img
-          src="/logo/logo.svg"
-          alt="RN Logo"
-          className="w-100 h-100 object-contain"
-        />
-      </div>
+    <div className="flex-1 relative overflow-auto px-4 py-8 sm:px-8">
+      {/* Fondo del logo */}
+      
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-10">
+          <img
+            src="/logo/logo.svg"
+            alt="RN Logo"
+            className="w-64 h-64 sm:w-80 sm:h-80 object-contain"
+          />
+        </div>
+      
 
-
-      {/* Welcome Content */}
-      <div className="z-10">
-        <h1 className="text-3xl font-bold text-white mb-2">{text.welcome.title}</h1>
-        <p className="text-gray-400 mb-8">
-          {text.welcome.action}
-        </p>
+      {/* Contenido */}
+      <div className="relative z-10 max-w-3xl mx-auto text-center">
+        <h1 className="text-2xl sm:text-3xl font-bold text-white break-words mb-2">
+          {text.welcome.title}
+        </h1>
+        <p className="text-gray-400 mb-8">{text.welcome.action}</p>
 
         <div className="grid sm:grid-cols-2 gap-4 mb-10">
           {Object.entries(files).map(([filename, _]) => (
@@ -48,13 +51,13 @@ export default function WelcomeScreen({
                 {filename.includes("about") && text.welcome.about}
                 {filename.includes("projects") && text.welcome.projects}
                 {filename.includes("contact") && text.welcome.contact}
-                {!["about", "projects", "contact"].some((key) => filename.includes(key)) &&
-                  text.welcome.noFiles}
+                {!["about", "projects", "contact"].some((key) =>
+                  filename.includes(key)
+                ) && text.welcome.noFiles}
               </div>
             </button>
           ))}
 
-          {/* Toggle Extensions Card */}
           <button
             onClick={onToggleExtensions}
             className="bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 p-4 rounded-lg text-left transition-colors duration-200"
@@ -93,14 +96,17 @@ export default function WelcomeScreen({
             ⬇️📄 CV:{" "}
             <a
               href={cvFile}
-              download={language === "es" ? "RicardoNatera-CV-ES.pdf" : "RicardoNatera-CV-EN.pdf"}
+              download={
+                language === "es"
+                  ? "RicardoNatera-CV-ES.pdf"
+                  : "RicardoNatera-CV-EN.pdf"
+              }
               className="underline hover:text-white transition-colors"
             >
               {text.welcome.downloadCV}
             </a>
           </div>
         </div>
-
       </div>
     </div>
   );
