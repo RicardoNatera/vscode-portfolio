@@ -4,7 +4,7 @@ export const filesEs = {
 
 **Ingeniero Informático** graduado en la Universidad Católica Andrés Bello, con más de **5 años de experiencia** en desarrollo web fullstack.
 
-Especializado en **JavaScript/TypeScript, React, Next.js, NestJS, MySQL y TailwindCSS**, construyo soluciones robustas, rápidas y modernas.
+Especializado en **JavaScript** **TypeScript**, **React**, **Next.js**, **NestJS**, **MySQL** y **TailwindCSS**, construyo soluciones robustas, rápidas y modernas.
 
 ---
 
@@ -30,6 +30,14 @@ He trabajado como **autónomo** en proyectos de diferentes escalas y sectores, d
 ## 🚀 ¿Qué busco?
 
 Estoy abierto a **nuevas oportunidades** laborales, colaboraciones o proyectos donde pueda aportar mis conocimientos y seguir creciendo como desarrollador.
+
+---
+
+## 📬 ¿Quieres contactarme?
+
+Puedes consultar el archivo **contact.json** o escribirme directamente por [LinkedIn](https://www.linkedin.com/in/natera-dev).
+
+¡Estaré encantado de hablar contigo!
 
 ---
 

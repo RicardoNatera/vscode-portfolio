@@ -10,9 +10,11 @@ import {
   SiMysql,
   SiTypescript,
   SiPostman,
+  SiJavascript
 } from "react-icons/si";
 
 export const iconMap = {
+  SiJavascript: <SiJavascript className="text-yellow-500" />,
   FaReact: <FaReact className="text-cyan-400" />,
   SiNextdotjs: <SiNextdotjs className="text-white" />,
   SiTailwindcss: <SiTailwindcss className="text-sky-400" />,

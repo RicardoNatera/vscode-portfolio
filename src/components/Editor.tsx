@@ -4,6 +4,7 @@ import { highlight } from "@/lib/highlight";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { motion } from "framer-motion";
+import { techMap } from "@/lib/techMap"; 
 
 interface EditorProps {
   content: string;
@@ -31,8 +32,26 @@ export function Editor({ content, filename }: EditorProps) {
         prose-ul:list-disc prose-ul:pl-6
         prose-li:marker:text-gray-400 prose-li:mb-1
       ">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
-      </div>
+<ReactMarkdown
+  remarkPlugins={[remarkGfm]}
+  components={{
+    strong({ children }) {
+      const text = String(children);
+      if (techMap[text]) {
+        const { icon, label } = techMap[text];
+        return (
+          <span className="inline-flex items-center gap-1 bg-zinc-800 border border-zinc-700 px-2 py-1 rounded text-sm font-normal">
+            {icon}
+            <span>{label}</span>
+          </span>
+        );
+      }
+      return <strong>{children}</strong>;
+    },
+  }}
+>
+  {content}
+</ReactMarkdown>      </div>
       ) : (
       <motion.div
         key={content}

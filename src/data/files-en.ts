@@ -5,6 +5,8 @@ export const filesEn = {
 
 I'm methodical, creative, organized, and honest. I enjoy solving problems by understanding the big picture and focusing on all the factors involved.
 
+Specializing in **JavaScript** **TypeScript**, **React**, **Next.js**, **NestJS**, **MySQL** and **TailwindCSS**, I build robust, fast, and modern solutions.
+
 ---
 
 ## 💻 What do I do?
@@ -33,6 +35,14 @@ I’m capable of working in teams, I have great communication skills, and I’m 
 I’m currently **open to opportunities** that allow me to collaborate with new teams and reach new goals together.
 
 I enjoy what I do and I’m fully confident in the results I deliver.
+
+---
+
+## 📬 Want to get in touch?
+
+Check the **contact.json** file or reach out to me directly on [LinkedIn](https://www.linkedin.com/in/natera-dev).
+
+I'd be happy to connect!
 
 ---
 
