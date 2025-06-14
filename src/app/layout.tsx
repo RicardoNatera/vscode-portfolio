@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Ricardo Natera's Portfolio",
     description: `☕ Code • Design • Repeat
     I turn ideas into fast, beautiful websites. Let’s build something awesome!`,
-    url: "https://ricardonatera.dev", // se cambiaria cuando se haga deploy
+    url: "https://vscode-portfolio-eight-ochre.vercel.app",
     siteName: "VSCode Portfolio - Ricardo Natera",
     images: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Ricardo Natera's Portfolio",
     description: `☕ Code • Design • Repeat
     I turn ideas into fast, beautiful websites. Let’s build something awesome!`,
-    images: ["/og-image.png"],
+    images: ["https://vscode-portfolio-eight-ochre.vercel.app/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",
