@@ -49,7 +49,7 @@ export default function Home() {
     }
 
     setInitialized(true); // 🔑 Marca como inicializado
-  }, [language]);
+  }, [language,files]);
 
   useEffect(() => {
     if (!initialized) return;

@@ -40,7 +40,7 @@ export default function WelcomeScreen({
         <p className="text-gray-400 mb-8">{text.welcome.action}</p>
 
         <div className="grid sm:grid-cols-2 gap-4 mb-10">
-          {Object.entries(files).map(([filename, _]) => (
+          {Object.keys(files).map((filename) => (
             <button
               key={filename}
               onClick={() => onOpenFile(filename as FileName)}

@@ -1,5 +1,3 @@
-import { extensions } from "./extensions";
-
 export const uiText = {
   es: {
     terminal: {
