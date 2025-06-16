@@ -53,17 +53,26 @@ Thanks for taking the time to read my summary.
 
   "projects.tsx": `export const projects = [
   {
-    title: "Product Dashboard",
-    description: "Admin panel for managing products with authentication, user roles, CRUD operations, filters, and PDF/Excel export.",
-    technologies: ["Next.js", "TailwindCSS", "NestJS", "Prisma", "PostgreSQL"],
-    repo: "https://github.com/RicardoNatera/inventario-app"
-  },
-  {
     title: "VSCode-style Portfolio",
     description: "Interactive and responsive developer portfolio designed with the look and feel of Visual Studio Code. Includes multilingual support, tab navigation, and file-based content.",
     technologies: ["Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],
     repo: "https://github.com/ricardoNatera/vscode-portfolio"
+    link: "https://vscode-portfolio-eight-ochre.vercel.app"
+  },
+  {
+    title: "Tournament Simulator",
+    description: "Interactive web app for creating elimination tournaments, manually advancing matches, and completing the tournament.",
+    technologies: ["Next.js", "TailwindCSS", "Framer Motion"],
+    repo: "https://github.com/RicardoNatera/simulador-torneos",
+    link: "https://simulador-torneos.vercel.app"
+  },
+  {
+    title: "Product Dashboard",
+    description: "Admin panel for managing products with authentication, user roles, CRUD operations, filters, and PDF/Excel export.",
+    technologies: ["Next.js", "TailwindCSS", "NestJS", "Prisma", "PostgreSQL"],
+    repo: "https://github.com/RicardoNatera/inventario-app"
   }
+  
 ];
 `,
 

@@ -48,16 +48,24 @@ Gracias por tomarse el tiempo de leer mi resumen.
 
   "projects.tsx": `export const projects = [
   {
+    title: "Portafolio estilo VSCode",
+    description: "Portafolio interactivo y responsivo con apariencia inspirada en Visual Studio Code. Incluye soporte multilenguaje, navegación por pestañas y contenido basado en archivos.",
+    technologies: ["Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],
+    repo: "https://github.com/ricardoNatera/vscode-portfolio",
+    link: "https://vscode-portfolio-eight-ochre.vercel.app"
+  },
+  {
+    title: "Simulador de Torneos",
+    description: "Web app interactiva para crear torneos eliminatorios, avanzar partidos manualmente y completar el torneo.",
+    technologies: ["Next.js", "TailwindCSS", "Framer Motion"],
+    repo: "https://github.com/RicardoNatera/simulador-torneos",
+    link: "https://simulador-torneos.vercel.app"
+  },
+  {
     title: "Dashboard de Productos",
     description: "Panel administrativo para gestionar productos con autenticación, roles de usuario, operaciones CRUD, filtros y exportación a PDF/Excel.",
     technologies: ["Next.js", "TailwindCSS", "NestJS", "Prisma", "PostgreSQL"],
     repo: "https://github.com/RicardoNatera/inventario-app"
-  },
-  {
-    title: "Portafolio estilo VSCode",
-    description: "Portafolio interactivo y responsivo con apariencia inspirada en Visual Studio Code. Incluye soporte multilenguaje, navegación por pestañas y contenido basado en archivos.",
-    technologies: ["Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],
-    repo: "https://github.com/ricardoNatera/vscode-portfolio"
   }
 ];
 `,
