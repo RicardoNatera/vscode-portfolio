@@ -60,6 +60,13 @@ Thanks for taking the time to read my summary.
     link: "https://vscode-portfolio-eight-ochre.vercel.app"
   },
   {
+    title: "Algorithm visualizer",
+    description: "Sorting and routing algorithm visualizer.",
+    technologies: ["Next.js", "TailwindCSS"],
+    repo: "https://github.com/RicardoNatera/visualizador-algoritmos",
+    link: "https://visualizador-algoritmos-tan.vercel.app"
+  },
+  {
     title: "Tournament Simulator",
     description: "Interactive web app for creating elimination tournaments, manually advancing matches, and completing the tournament.",
     technologies: ["Next.js", "TailwindCSS", "Framer Motion"],
