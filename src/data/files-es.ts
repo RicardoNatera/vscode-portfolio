@@ -57,14 +57,14 @@ Gracias por tomarse el tiempo de leer mi resumen.
   {
     title: "Visualizador de algoritmos",
     description: "Visualizador de algoritmos de ordenamiento y rutas.",
-    technologies: ["Next.js", "TailwindCSS"],
+    technologies: ["Next.js", "TailwindCSS", "TypeScript"],
     repo: "https://github.com/RicardoNatera/visualizador-algoritmos",
     link: "https://visualizador-algoritmos-tan.vercel.app"
   },
   {
     title: "Simulador de Torneos",
     description: "Web app interactiva para crear torneos eliminatorios, avanzar partidos manualmente y completar el torneo.",
-    technologies: ["Next.js", "TailwindCSS", "Framer Motion"],
+    technologies: ["Next.js", "TailwindCSS", "Framer Motion", "TypeScript"],
     repo: "https://github.com/RicardoNatera/simulador-torneos",
     link: "https://simulador-torneos.vercel.app"
   },
