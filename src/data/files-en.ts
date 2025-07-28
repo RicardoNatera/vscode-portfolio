@@ -60,6 +60,13 @@ Thanks for taking the time to read my summary.
     link: "https://vscode-portfolio-eight-ochre.vercel.app"
   },
   {
+    title: "Push Anime",
+    description: "Web app for browsing and downloading the latest anime episodes published on AnimeFLV, OtakusTV, and AnimeAV1. Includes sorting by most recent publications, episode grouping, and multi-source search engine.",
+    technologies: ["Next.js", "TailwindCSS", "TypeScript", "Cheerio", "Axios"],
+    repo: "https://github.com/RicardoNatera/ultimos-animes-app",
+    link: "https://pushanime.vercel.app/"
+  },
+  {
     title: "Algorithm visualizer",
     description: "Sorting and routing algorithm visualizer.",
     technologies: ["Next.js", "TailwindCSS", "TypeScript"],
